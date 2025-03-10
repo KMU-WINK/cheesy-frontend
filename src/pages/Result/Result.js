@@ -1,9 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useNavigate, useLocation } from "react-router-dom";
 import axios from "axios";
-import { ReactComponent as IconamoonHome } from "./iconamoon_home.svg";
-import { ReactComponent as MaterialSymbolsMenuBook } from "./material-symbols_menu-book.svg";
-// import frame14 from "./Frame 14.png";
+import HeaderResultPage from "../../component/HeaderResultPage";
 import "./Result.css";
 
 const Result = () => {
@@ -52,6 +50,7 @@ const Result = () => {
 
     return (
         <div className="screen">
+            <HeaderResultPage title="결과"/>
             <div className="div">
                 <div className="text-wrapper">happy meal time!</div>
                 {/* overlap-group과 text-wrapper-4를 묶은 새로운 컨테이너 */}
@@ -72,8 +71,7 @@ const Result = () => {
                         save
                     </button>
                 </div>
-                <IconamoonHome className="iconamoon-home" onClick={() => navigate("/Home")} />
-                <MaterialSymbolsMenuBook className="material-symbols" onClick={() => navigate("/Mymenu")} />
+
             </div>
         </div>
     );
