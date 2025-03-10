@@ -71,6 +71,11 @@ const Result = () => {
                         save
                     </button>
                 </div>
+                <img
+                    src="/images/Frame%2014.png"
+                    alt="결과 이미지"
+                    className="bottom-image"
+                />
 
             </div>
         </div>
